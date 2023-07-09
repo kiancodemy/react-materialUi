@@ -1,9 +1,27 @@
-import { Button } from "@mui/material";
+import {
+  Typography,
+  AppBar,
+  CardActions,
+  CardContent,
+  CardMedia,
+  CssBaseline,
+  Grid,
+  Toolbar,
+  Card,
+  Container,
+} from "@mui/material";
+import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 function App() {
   return (
-    <div>
-      <Button variant="contained">Hello World</Button>
-    </div>
+    <>
+      <CssBaseline />
+      <AppBar position="relative">
+        <Toolbar>
+          <PhotoCameraIcon />
+          <Typography variant="h6">Photo Album</Typography>
+        </Toolbar>
+      </AppBar>
+    </>
   );
 }
 
